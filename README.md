@@ -5,13 +5,20 @@ Simple boilerplate to help kick start a new Silverstripe module.
 ## Creating a new module
 Quickly setup a new module skeleton by cloning this repository and deleting the .git folder.
 
-To do this in one line, from the command line run:
+To do this in one line, from the command line run:   
 (*Replace <b><i>`MyModuleFolder`</i></b> with name of the folder where you want to create your new module.*)  
-**Windows**
-<pre>cmd /V /C "set "SS_MODULE_DIR=<b><i>MyModuleFolder</i></b>" && git clone https://github.com/guru-digital/silverstripe-module-boilerplate.git !SS_MODULE_DIR! && rmdir /q /s !SS_MODULE_DIR!\.git"</pre>
-**\*nix**
-<pre>SS_MODULE_DIR=<b><i>MyModuleFolder</i></b> && git clone https://github.com/guru-digital/silverstripe-module-boilerplate.git $SS_MODULE_DIR && rm -rf ${SS_MODULE_DIR}/.git</pre>
 
+###Windows
+**Using Composer**
+<pre>cmd /V /C "set "SS_MODULE_DIR=<b><i>MyModuleFolder</i></b>" && composer require gdmedia/silverstripe-module-boilerplate && move silverstripe-module-boilerplate !SS_MODULE_DIR! && composer remove gdmedia/silverstripe-module-boilerplate && IF EXIST !SS_MODULE_DIR!\.git rmdir /q /s !SS_MODULE_DIR!\.git"</pre>
+**Using GIT**
+<pre>cmd /V /C "set "SS_MODULE_DIR=<b><i>MyModuleFolder</i></b>" && git clone https://github.com/guru-digital/silverstripe-module-boilerplate.git !SS_MODULE_DIR! && rmdir /q /s !SS_MODULE_DIR!\.git"</pre>
+
+###\*nix 
+**Using Composer**
+<pre>SS_MODULE_DIR=<b><i>MyModuleFolder</i></b> && composer require --prefer-dist gdmedia/silverstripe-module-boilerplate && mv silverstripe-module-boilerplate $SS_MODULE_DIR && composer remove gdmedia/silverstripe-module-boilerplate && [ -d ${SS_MODULE_DIR}/.git ] && rm -r ${SS_MODULE_DIR}/.git</pre>
+**Using GIT**
+<pre>SS_MODULE_DIR=<b><i>MyModuleFolder</i></b> && git clone https://github.com/guru-digital/silverstripe-module-boilerplate.git $SS_MODULE_DIR && rm -rf ${SS_MODULE_DIR}/.git</pre>
 
 ## Grunt
 You can use Grunt to quickly rename the boiler plate file names and place holders.

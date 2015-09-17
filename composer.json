@@ -19,7 +19,7 @@
 	},
 	"type": "silverstripe-module",
 	"extra": {
-		"installer-name": "vim"
+		"installer-name": "silverstripe-module-boilerplate"
 	},
 	"require": {
 		"php": ">=5.3.2",

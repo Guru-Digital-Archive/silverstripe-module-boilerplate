@@ -6,7 +6,7 @@ Simple boilerplate to help kick start a new Silverstripe module.
 Quickly setup a new module skeleton by cloning this repository and deleting the .git folder.
 
 To do this in one line, from the command line run:
-(*Replace <b><i>`MyModuleFolder`</i></b> with name of the folder where you want to create your new module.*)
+(*Replace <b><i>`MyModuleFolder`</i></b> with name of the folder where you want to create your new module.*)  
 **Windows**
 <pre>cmd /V /C "set "SS_MODULE_DIR=<b><i>MyModuleFolder</i></b>" && git clone https://github.com/guru-digital/silverstripe-module-boilerplate.git !SS_MODULE_DIR! && rmdir /q /s !SS_MODULE_DIR!\.git"</pre>
 **\*nix**

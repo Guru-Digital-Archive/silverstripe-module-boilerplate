@@ -1,0 +1,9 @@
+---
+Name: My module
+---
+Page:
+  extensions:
+    - MyModuleDataExtension
+Controller:
+  extensions:
+    - MyModuleExtension

@@ -1,0 +1,28 @@
+{
+	"name": "gdmedia_silverstripe-module-boilerplate",
+	"description": "Simple boilerplate to help kick start a new Silverstripe module.",
+	"license": "BSD-2-Clause",
+	"homepage": "https://github.com/guru-digital/silverstripe-module-boilerplate",
+	"keywords": [
+		"silverstripe",
+		"module",
+		"boilerplate"
+	],
+	"authors": [
+		{
+			"name": "Corey Sewell",
+			"email": "corey@gurudigital.nz"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/guru-digital/silverstripe-module-boilerplate.git"
+	},
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	],
+	"devDependencies": {}
+}

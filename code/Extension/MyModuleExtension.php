@@ -1,5 +1,5 @@
 <?php
 
-class MyModuleExtension extends Extension {
-
+class MyModuleExtension extends Extension
+{
 }

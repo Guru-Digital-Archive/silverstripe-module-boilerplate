@@ -1,7 +1,5 @@
 <?php
 
-class MyModuleDataExtension extends DataExtension{
-
-
+class MyModuleDataExtension extends DataExtension
+{
 }
-
